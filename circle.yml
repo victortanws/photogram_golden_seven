@@ -1,0 +1,11 @@
+machine:
+  ruby:
+    version: 2.2.4
+
+notify:
+  webhooks:
+    - url: https://grades-production.herokuapp.com/builds
+
+test:
+  override:
+    - bundle exec rspec --order default --format documentation --format j --out $CIRCLE_ARTIFACTS/rspec_output.json
