@@ -52,6 +52,7 @@ RSpec.configure do |config|
       {
         :description => example.description,
         :full_description => example.full_description,
+        :hint => example.metadata[:hint],
         :status => example.execution_result.status.to_s,
         :points => example.metadata[:points],
         :file_path => example.metadata[:file_path],

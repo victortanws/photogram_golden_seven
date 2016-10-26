@@ -51,17 +51,20 @@ To start with, we'll keep it simple and manage just one resource: photos. Our go
 [http://photogram-golden-7.herokuapp.com](http://photogram-golden-7.herokuapp.com)
 
 Eventually, we'll add the ability to sign up, upload photos, and follow other users, and we'll wind up building Instagram. But for now, anonymous visitors will simply copy-paste the URLs of images that are already on the Internet.
+
 ## Setup
 
  1. Read the instructions completely.
- 1. Clone this repository.
- 1. Make a branch for your changes.
+ 1. Fork this repository.
+ 1. Clone your fork.
  1. `cd` in to the application's root folder.
  1. `bundle install`
  1. `rake db:migrate` (I have already written the instructions to create a table to store photos for you, but you still need to do this to execute the instructions)
  1. `rake db:seed` (This command will pre-populate your table with a few rows, so that you can get straight to work. If you are interested, you can see how I did it in `/db/seeds.rb`.)
  1. `rails server`
  1. Open up the code in Atom.
+ 1. Commit and Sync often.
+ 1. Run `rake grade`.
 
 ### READ (index, show)
 
