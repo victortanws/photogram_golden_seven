@@ -44,6 +44,8 @@ For each web resource, we usually support seven actions (with some exceptions, l
 
 Let's get started.
 
+# There is a Getting Started video on Canvas.
+
 ## The Target
 
 To start with, we'll keep it simple and manage just one resource: photos. Our goal is to build an app that lets users submit URLs of photos and add captions for them, like this:
