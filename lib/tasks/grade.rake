@@ -221,6 +221,9 @@ else
   desc "Grade project on Windows"
   task :grade do # if needed in the future, add => :environment
 
+    # Windows prep
+    `rake db:migrate RAILS_ENV=test`
+
     # Not quite right: options work, but barely
     options = {}
     OptionParser.new do |opts|
@@ -355,7 +358,7 @@ else
         rspec_output_string_doc = `bundle exec rspec --order default --format documentation --color --tty` # "--require spec_helper"?
         puts rspec_output_string_doc
       else
-        # `open #{results_url}` # FIX for Windows
+        `cmd /c start #{results_url}`
       end
     elsif res.kind_of? Net::HTTPUnprocessableEntity
       puts "- ERROR: #{res.body}"#.error_format
