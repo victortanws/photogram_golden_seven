@@ -1,8 +1,8 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.6'
+gem 'rails', '5.0.1'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets
@@ -33,10 +33,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development do
   gem "better_errors"
   gem "binding_of_caller"
+  gem 'wdm' if Gem.win_platform?
 end
 
 gem 'rspec-rails', group: [:test, :development]
 gem 'capybara', group: [:test, :development]
 gem 'factory_girl_rails', group: [:test, :development]
-gem 'quiet_assets', group: [:test, :development]
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
