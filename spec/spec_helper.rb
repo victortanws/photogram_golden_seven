@@ -15,6 +15,14 @@ RSpec.configure do |config|
 
   Kernel.srand config.seed
 
+  config.backtrace_exclusion_patterns = [
+    /\/lib\d*\/ruby\//,
+    /bin\//,
+    /gems/,
+    /spec\/spec_helper\.rb/,
+    /lib\/rspec\/(core|expectations|matchers|mocks)/
+  ]
+
   class RSpec::Core::Formatters::JsonFormatter
     def dump_summary(summary)
       total_points = summary.
