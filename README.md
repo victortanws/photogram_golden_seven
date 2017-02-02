@@ -61,12 +61,12 @@ Eventually, we'll add the ability to sign up, upload photos, and follow other us
  1. Clone your fork.
  1. `cd` in to the application's root folder.
  1. `bundle install`
- 1. `rake db:migrate` (I have already written the instructions to create a table to store photos for you, but you still need to do this to execute the instructions)
- 1. `rake db:seed` (This command will pre-populate your table with a few rows, so that you can get straight to work. If you are interested, you can see how I did it in `/db/seeds.rb`.)
+ 1. `rails db:migrate` (I have already written the instructions to create a table to store photos for you, but you still need to do this to execute the instructions)
+ 1. `rails db:seed` (This command will pre-populate your table with a few rows, so that you can get straight to work. If you are interested, you can see how I did it in `/db/seeds.rb`.)
  1. `rails server`
  1. Open up the code in Atom.
  1. Commit and Sync often.
- 1. Run `rake grade`.
+ 1. Run `rails grade`.
 
 ### READ (index, show)
 
@@ -88,7 +88,7 @@ The first URL is to let users see a list of all photos if they visit
 
 Click this link -- you'll see that I have already completed the RCAV. Follow it through each step, route-controller-action-view, and make sure you understand what is going on at each step.
 
-Notice that there are already a few photos in the table -- I wrote some Ruby to pre-populate your table with a few rows, so that you can get straight to work, and you ran it when you did `rake db:seed`. If you like, you can go into your `rails console` and add a few more photos of your choosing, by using your [CRUD with Ruby][1] skills. The index page will grow as you do this.
+Notice that there are already a few photos in the table -- I wrote some Ruby to pre-populate your table with a few rows, so that you can get straight to work, and you ran it when you did `rails db:seed`. If you like, you can go into your `rails console` and add a few more photos of your choosing, by using your [CRUD with Ruby][1] skills. The index page will grow as you do this.
 
 Under each photo on the index page, there is a link labeled "Show". The `href`s for these links look like:
 
@@ -256,7 +256,7 @@ Connect [Bootstrap][2] or a [Bootswatch][3] and make the index page look similar
 You can find and modify the `<head>` and other boilerplate that wrap all of your view templates in `/app/views/layouts/application.html.erb`.
 
 
-  [1]: https://gist.github.com/raghubetina/bb6336ead63080be2ff4
+  [1]: https://guides.firstdraft.com/crud-with-ruby.html
   [2]: http://www.bootstrapcdn.com/#quickstart_tab
   [3]: http://www.bootstrapcdn.com/#bootswatch_tab
   [4]: http://photogram-golden-7.herokuapp.com/mockup.html
