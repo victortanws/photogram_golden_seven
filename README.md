@@ -249,12 +249,6 @@ If we can connect all these dots, we will have completed one entire database-bac
 
 Struggle with it; **come up with questions**.
 
-#### Optional challenge, for fun:
-
-Connect [Bootstrap][2] or a [Bootswatch][3] and make the index page look similar to [this][4], but without the user avatars and comments.
-
-You can find and modify the `<head>` and other boilerplate that wrap all of your view templates in `/app/views/layouts/application.html.erb`.
-
 
   [1]: https://guides.firstdraft.com/crud-with-ruby.html
   [2]: http://www.bootstrapcdn.com/#quickstart_tab
