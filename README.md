@@ -1,3 +1,5 @@
+# There is a Getting Started video for this project on Canvas. Check it out first.
+
 # RCAV + CRUD
 
 ## Introduction
@@ -43,8 +45,6 @@ For each web resource, we usually support seven actions (with some exceptions, l
  - destroy: removes a row from the table
 
 Let's get started.
-
-# There is a Getting Started video on Canvas.
 
 ## The Target
 
