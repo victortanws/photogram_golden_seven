@@ -88,7 +88,7 @@ The first URL is to let users see a list of all photos if they visit
 
 Click this link -- you'll see that I have already completed the RCAV. Follow it through each step, route-controller-action-view, and make sure you understand what is going on at each step.
 
-Notice that there are already a few photos in the table -- I wrote some Ruby to pre-populate your table with a few rows, so that you can get straight to work, and you ran it when you did `rails db:seed`. If you like, you can go into your `rails console` and add a few more photos of your choosing, by using your [CRUD with Ruby][1] skills. The index page will grow as you do this.
+Notice that there are already a few photos in the table -- I wrote some Ruby to pre-populate your table with a few rows, so that you can get straight to work, and you ran it when you did `rails db:seed`. If you like, you can go into your `rails console` and add a few more photos of your choosing, by using your [CRUD with Ruby](https://guides.firstdraft.com/crud-with-ruby.html) skills. The index page will grow as you do this.
 
 Under each photo on the index page, there is a link labeled "Show". The `href`s for these links look like:
 
@@ -248,9 +248,3 @@ Rinse and repeat.
 If we can connect all these dots, we will have completed one entire database-backed CRUD web resource. Every web application is essentially just a collection of multiple of these resources; they are the building blocks of everything we do, and we'll just cruise from here.
 
 Struggle with it; **come up with questions**.
-
-
-  [1]: https://guides.firstdraft.com/crud-with-ruby.html
-  [2]: http://www.bootstrapcdn.com/#quickstart_tab
-  [3]: http://www.bootstrapcdn.com/#bootswatch_tab
-  [4]: http://photogram-golden-7.herokuapp.com/mockup.html
