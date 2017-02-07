@@ -20,6 +20,7 @@ class PhotosController < ApplicationController
     a_new_photo = Photo.new
 
     a_new_photo.caption = params[:the_caption]
+    a_new_photo.source = params[:the_source]
 
     a_new_photo.save
 
