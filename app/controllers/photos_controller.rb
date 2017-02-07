@@ -36,6 +36,7 @@ class PhotosController < ApplicationController
   end
 
   def edit_form
+    @existing_photo = Photo.find(params[:some_id])
 
     render("photos/edit_form.html.erb")
   end
