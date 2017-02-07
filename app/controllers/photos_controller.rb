@@ -5,5 +5,8 @@ class PhotosController < ApplicationController
     render("photos/index.html.erb")
   end
 
+  def show
 
+    render("photos/show.html.erb")
+  end
 end
