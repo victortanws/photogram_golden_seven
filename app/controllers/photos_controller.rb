@@ -45,6 +45,7 @@ class PhotosController < ApplicationController
     existing_photo = Photo.find(params[:some_id])
 
     existing_photo.caption = params[:the_caption]
+    existing_photo.source = params[:the_source]
 
     existing_photo.save
 
