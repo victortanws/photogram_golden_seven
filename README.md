@@ -99,7 +99,7 @@ Under each photo on the index page, there is a link labeled "Show". The `href`s 
 
 **Your first job** is to make these URLs work to display a photo details page for each individual photo. In particular, in the `show` action, use the number after the slash to retrieve the row from the `photo` table with the corresponding `id`, and use that row's `source` value to draw the `<img>` in the view. Toss in the `caption`, too.
 
-Hints: Remember your [Ruby CRUD Cheatsheet][1], and what you know about the `params` hash.
+Hints: Remember your [CRUD with Ruby guide](https://guides.firstdraft.com/crud-with-ruby.html), and what you know about the `params` hash.
 
 ### CREATE (new_form, create_row)
 
