@@ -1,0 +1,10 @@
+<h1>Photo Details</h1>
+
+<img src="<%= @photo.source %>" width ="480">
+<p> <%= @photo.caption %> </p>
+
+
+
+<a href="http://localhost:3000/photos">Back</a>
+<a href="http://localhost:3000/photos/<%= @photo.id %>/edit">Edit</a>
+<a href="http://localhost:3000/photos/delete_photo/<%= @photo.id">Back</a>
