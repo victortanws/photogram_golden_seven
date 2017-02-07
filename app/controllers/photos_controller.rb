@@ -15,4 +15,9 @@ class PhotosController < ApplicationController
 
     render("photos/new_form.html.erb")
   end
+
+  def create_row
+
+    redirect_to("http://localhost:3000/photos")
+  end
 end
