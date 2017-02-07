@@ -17,6 +17,9 @@ class PhotosController < ApplicationController
   end
 
   def create_row
+    a_new_photo = Photo.new
+
+    a_new_photo.save
 
     redirect_to("http://localhost:3000/photos")
   end
