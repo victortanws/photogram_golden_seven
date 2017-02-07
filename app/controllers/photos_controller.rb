@@ -42,6 +42,11 @@ class PhotosController < ApplicationController
   end
 
   def update_row
+    existing_photo = Photo.find(params[:some_id])
+
+    existing_photo.caption = params[:the_caption]
+
+    existing_photo.save
 
     redirect_to("http://localhost:3000/photos/#{params[:some_id]}")
   end
