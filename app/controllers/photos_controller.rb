@@ -40,4 +40,9 @@ class PhotosController < ApplicationController
 
     render("photos/edit_form.html.erb")
   end
+
+  def update_row
+
+    redirect_to("http://localhost:3000/photos/#{params[:some_id]}")
+  end
 end
