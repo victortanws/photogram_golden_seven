@@ -34,4 +34,9 @@ class PhotosController < ApplicationController
 
     redirect_to("http://localhost:3000/photos")
   end
+
+  def edit_form
+
+    render("photos/edit_form.html.erb")
+  end
 end
