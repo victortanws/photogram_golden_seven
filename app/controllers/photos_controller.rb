@@ -10,4 +10,9 @@ class PhotosController < ApplicationController
 
     render("photos/show.html.erb")
   end
+
+  def new_form
+
+    render("photos/new_form.html.erb")
+  end
 end
