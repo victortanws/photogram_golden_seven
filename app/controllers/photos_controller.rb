@@ -26,4 +26,9 @@ class PhotosController < ApplicationController
 
     redirect_to("http://localhost:3000/photos")
   end
+
+  def destroy_row
+
+    redirect_to("http://localhost:3000/photos")
+  end
 end
